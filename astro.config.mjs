@@ -5,7 +5,6 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://kriyaetive-web.github.io',
-	base: '/page',
+	site: 'https://kriyaetive.github.io',
 	integrations: [mdx(), sitemap()],
 });
