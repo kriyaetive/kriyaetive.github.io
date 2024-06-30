@@ -21,19 +21,11 @@ const { title, description, image = "/blog-placeholder-1.jpg" } = Astro.props;
 <meta name="generator" content={Astro.generator} />
 
 <!-- Font preloads -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link
-  rel="preload"
-  href="/web/fonts/himelody-regular.ttf"
-  as="font"
-  type="font/ttf"
-  crossorigin
-/>
-<link
-  rel="preload"
-  href="/web/fonts/inconsolata-variable.ttf"
-  as="font"
-  type="font/ttf"
-  crossorigin
+  href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Inconsolata:wght@200..900&display=swap"
+  rel="stylesheet"
 />
 
 <!-- Canonical URL -->

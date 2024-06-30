@@ -437,6 +437,11 @@
   resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.21.5.tgz#acad351d582d157bb145535db2a6ff53dd514b5c"
   integrity sha512-tQd/1efJuzPC6rCFwEvLtci/xNFcTZknmXs98FYDfGE4wP9ClFV98nyKrzJKVPMhdDnjzLhdUyMX4PsQAPjwIw==
 
+"@fontsource/twinkle-star@^5.0.20":
+  version "5.0.20"
+  resolved "https://registry.yarnpkg.com/@fontsource/twinkle-star/-/twinkle-star-5.0.20.tgz#71e0da5fd2cf86a215e7e60caf99b29c3fe2ffbe"
+  integrity sha512-kVuvs1ohuYOheEEWwwp/GsfGOnEML8W7GBcuo/iLk0GQs5sPVXcJalVjzeV11RIUiWTEg53rfVxhUIVG5v/xCQ==
+
 "@img/sharp-darwin-arm64@0.33.4":
   version "0.33.4"
   resolved "https://registry.yarnpkg.com/@img/sharp-darwin-arm64/-/sharp-darwin-arm64-0.33.4.tgz#a1cf4a7febece334f16e0328b9689f05797d7aec"
