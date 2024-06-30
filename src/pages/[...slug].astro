@@ -1,6 +1,7 @@
 ---
 import { type CollectionEntry, getCollection } from "astro:content";
 import Page from "../layouts/Page.astro";
+import { SITE_TITLE } from "../consts";
 
 export async function getStaticPaths() {
   const views = await getCollection("view");
@@ -15,6 +16,8 @@ const view = Astro.props;
 const { Content } = await view.render();
 ---
 
-<Page title="">
-  <Content />
+<Page title={SITE_TITLE}>
+  <section class="content-wrapper">
+    <Content />
+  </section>
 </Page>
