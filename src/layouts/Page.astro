@@ -15,10 +15,15 @@ const { title, description } = Astro.props;
   <body>
     <main>
       <Header />
-
-      <slot />
-
+      <section class="main-body-wrapper">
+        <slot />
+      </section>
       <Footer />
     </main>
-  </body>
+  </body><style>
+    .main-body-wrapper {
+      display: flex;
+      padding: 5rem 0 2rem 0;
+    }
+  </style>
 </html>
