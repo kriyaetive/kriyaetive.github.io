@@ -23,7 +23,7 @@ import { NAV_MENUS } from "../consts";
     <div class="internal-routes">
       {
         NAV_MENUS.map((menu) => (
-          <HeaderLink href={`/web${menu.href}`} tabindex={menu.tabIndex}>
+          <HeaderLink href={`${menu.href}`} tabindex={menu.tabIndex}>
             {menu.title}
           </HeaderLink>
         ))
