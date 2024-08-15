@@ -1,137 +1,141 @@
+/* Root Variables for Colors */
 :root {
-  --accent: #ffd600;
-  --accent-dark: #535353;
-  --primary-light: #ffffff;
-  --primary-dark: #262626;
-  --primary-text-color: #616161;
-  --secondary-text-color: #1c274c;
-  --description-text-color: #9f9f9f;
-  --default-font-size: 24px;
-  --large-font-size: 1.3rem;
-  --small-font-size: 1.5rem;
-  --micro-font-size: 0.542rem;
-  --default-font-family: "Hi Melody", sans-serif;
-  --heading-font-family: "Inconsolata", monospace;
+  --primary-color: #4e6e81;
+  --secondary-color: #505050;
+  --accent-color: none;
+  --text-color: #828282;
+  --bg-primary-color: #fefefe;
+  --bg-secondary-color: #fafafa;
+  --inter-font-family: 'Inter', sans-serif;
+  --montserrat-font-family: 'Montserrat', sans-serif;
+  --inconsolata-font-family: 'Inconsolata', monospace;
+  --outfit-font-family: 'Outfit', sans-serif;
+}
+
+/* Set base font size */
+html {
+  font-size: 14px;
+}
+
+/* Reset and Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-primary-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   margin: 0;
-  padding: 0;
-  text-align: left;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  background: var(--primary-light);
-  color: var(--primary-text-color);
-  font-size: var(--default-font-size);
-  font-family: var(--default-font-family);
-  line-height: 1.7;
-}
-main {
-  max-width: calc(100% - 2em);
-  margin: auto;
-  padding: 1em 5em;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--heading-font-family);
-  font-optical-sizing: auto;
-  margin: 0;
-  padding: 0;
-  color: var(--secondary-text-color);
-}
-h1 {
-  font-size: 3.052rem;
-}
-h2 {
-  font-size: 2.441rem;
-}
-h3 {
-  font-size: 1.953rem;
-}
-h4 {
-  font-size: 1.563rem;
-}
-h5 {
-  font-size: 1.25rem;
-}
-strong,
-b {
-  font-weight: 700;
-}
-a {
-  color: #8f8e8e;
-}
-a:hover {
-  color: var(--accent-dark);
-}
-
-a:active {
-  color: var(--secondary-text-color);
-}
-p {
-  margin-bottom: 1em;
-}
-.prose p {
-  margin-bottom: 2em;
-}
-textarea {
-  width: 100%;
-  font-size: 16px;
-}
-input {
-  font-size: 16px;
-}
-table {
-  width: 100%;
-}
-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-code {
-  padding: 2px 5px;
-  background-color: rgb(var(--gray-light));
-  border-radius: 2px;
-}
-pre {
-  padding: 1.5em;
-  border-radius: 8px;
-}
-pre > code {
-  all: unset;
-}
-blockquote {
-  border-left: 4px solid var(--accent);
-  padding: 0 0 0 20px;
-  margin: 0px;
-  font-size: 1.333em;
-}
-hr {
-  border: none;
-  border-top: 1px solid rgb(var(--gray-light));
-}
-
-.text-tagline {
-  font-family: var(--heading-font-family);
-  font-style: normal;
-  font-weight: 600;
   font-size: 1rem;
-  line-height: 25px;
-}
-.color-tagline {
-  color: var(--description-text-color);
 }
 
-@media (max-width: 720px) {
-  body {
-    font-size: 18px;
-  }
-  main {
-    padding: 1em;
-  }
+/* Container for the split layout */
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  max-width: 1500px;
+  height: 100vh;
+  background-color: var(--primary-color);
+  overflow: hidden;
+}
+
+/* Individual split styles */
+.split {
+  flex: 1;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  padding: 8rem 4rem 4rem 4rem;
+  color: var(--text-color);
+}
+
+/* Left Split */
+.split-left {
+  padding: 8rem 0rem 0 4rem;
+  background-color: var(--bg-primary-color);
+}
+
+/* Right Split */
+.split-right {
+  background-color: var(--bg-secondary-color);
+}
+
+/* Accent elements (buttons, links) */
+button,
+a {
+  background-color: var(--accent-color);
+  font-family: var(--inconsolata-font-family);
+  color: var(--text-color);
+  border: none;
+  padding: 0rem 2rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-right: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover,
+a:hover {
+  background-color: darken(var(--accent-color), 10%);
+}
+
+button:active,
+a:active {
+  background-color: var(--primary-color), 20%;
+}
+
+/* Typography */
+
+h1 {
+  font-size: 2.5rem;
+  font-family: var(--inconsolata-font-family);
+  font-weight: bold;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-family: var(--inconsolata-font-family);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+h5 {
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+h6 {
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-family: var(--inconsolata-font-family);
+  font-weight: normal;
+  padding: 0.5rem 0;
+  line-height: 1.9rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
