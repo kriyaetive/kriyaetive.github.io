@@ -7,7 +7,7 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://kriyaetive.github.io',
-  base: '/web/',
+  base: '/',
   integrations: [mdx(), sitemap(), tailwind({
     configFile: './tailwind.config.mjs',
   })]
