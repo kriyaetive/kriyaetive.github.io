@@ -12,23 +12,23 @@ export const NAV_MENUS = [
     href: "/",
   },
   {
-    title: "what are we doing?",
-    tabIndex: 0,
+    title: "what we do",
+    tabIndex: 1,
     href: "/whatwedo",
+  },
+    {
+    title: "products",
+    tabIndex: 2,
+    href: "/products",
   },
   {
     title: "about us",
-    tabIndex: 0,
+    tabIndex: 3,
     href: "/about",
   },
   {
-    title: "blog",
-    tabIndex: 0,
-    href: "/blog",
-  },
-  {
     title: "contact us",
-    tabIndex: 0,
+    tabIndex: 4,
     href: "/contact",
   },
 ];
