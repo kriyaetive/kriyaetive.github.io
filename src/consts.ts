@@ -26,9 +26,9 @@ export const NAV_MENUS = [
     tabIndex: 3,
     href: "/about",
   },
-  {
-    title: "contact us",
-    tabIndex: 4,
-    href: "/contact",
-  },
+  // {
+  //   title: "contact us",
+  //   tabIndex: 4,
+  //   href: "/contact",
+  // },
 ];
